@@ -4,11 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+rel="stylesheet">
+    <title>Weather web</title>
 </head>
 <body>
-    
+    <div class="container" id="container1">
+      <div class="background-img">
 
+    
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#container1">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Podcast</a></li>
+            <li><a href="">Video</a></li>
+        </ul>
+        
+    </nav>
+    <section>
+
+    
+      <div class="header-sec">
+        <header>
+            <h1>Weather Forecast</h1>
+        </header>
+        <form class="search-bar">
+            <input type="search" name="" id="search" placeholder="Enter the location..." autocomplete="on">
+         <button type="submit" class="search-btn">search</button>
+        </form>
+      </div>
+    </div>
+        <div class="location-header-txt">
+            <h2 id="currentLocation"></h2>
+        </div>
+        <div class="weather-container">
+            <div id="weatherCondition" class="weatherCondition">
+                <p  class="weather-class"></p>
+            </div>
+           
+            <button class="details-btn" id="detailsBtn">more details <i class='bx bx-right-arrow-alt'></i></button>
+             <div class="current-weather-class" id="currentWeather"><h2>current Weather</h2>
+            <h4 id="timingClock"></h4></div>
+       
+       
+             <div class="weather-left-grid">
+                <div class="temperatureIcon"  id="temperatureIcon">
+                   
+                </div>
+               <p id="currentLocation4" class="currentLocation4"></p>
+            <h1 class="temperatureDigit" id="temperaturePercent"></h1>
+              </div>
+
+              <div class="weather-right-grid">
+                <ul>
+                    <li><img src="./images/humidity.png" alt="">Humidity   <span class="Humidity-span" id="humidityPercent"></span></li>
+                    <li><img src="./images/wind.png" alt="logo">Air Quality <span class="air-quality-span " id="airQuality"></span></li>
+                    <li><img src="./images/uv-index.png" alt="">UV Index <span class="index-span" id="index"> </span></li>
+
+         </ul>
+             </div>
+        </div>
+     </div>
+    </section>
+  </div>
+
+                                       <!-- container 2 -->
+     <div class="container2" id="container2">
+        
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Podcast</a></li>
+                    <li><a href="">Video</a></li>
+                </ul>
+                
+            </nav>
+
+            <div class="header-sec2" >
+                <h1 id="currentLocation3"></h1>
+                <div class="cloudy-img-sec" >
+                   <span id="temperatureIcon3"></span>
+
+                    <h1>weather</h1>
+                    <p id="weekday"></p>
+                    <p id="cloud3"> </p>
+                 
+                </div>
+            </div>
+
+            <div class="display-current-details">
+                <div class="temperature-current-details">
+                     <h1>current Temperature <br><span class="current-p"><p id="cloud4"></p></span> </h1>
+                     <h1 class="temperatureDigit"  id="temperaturePercent2">  </h1><span class="temperatureCloud" id="temperatureIcon2"></span>
+                     <p class="temperaturePtag" id="weatherCondition2"></p>
+                     
+                </div>
+
+                <div class="weather-current-details">
+                    <div>
+                       <div class="weather-current-heads">
+                        <h1>current weather</h1>
+                        <p class="current-head-time" id="timingClock2"></p>
+                       </div>
+                       <div class="current-heads-location" id="currentLocation2">
+                       
+                       </div>
+                        
+                    </div>
+                    <div class="weather-details2">
+                        <ul>
+                            <li><img src="./images/humidity.png" alt="">Humidity   <span class="Humidity-span" id="humidityPercent2"></span></li>
+                            <li><img src="./images/wind.png" alt="logo">Air Quality <span class="air-quality-span" id="airQuality2"></span></li>
+                            <li><img src="./images/uv-index.png" alt="">UV Index <span class="index-span" id="index2">0 of 11</span></li>
+        
+                 </ul>
+                     </div>
+                                                    <button class="load-btn">load more</button>
+                     
+                </div>
+             
+                
+            </div>
+            <button class="daily-report-btn">View Daily Report</button>
+    </div>
+                                              
 
 
 
