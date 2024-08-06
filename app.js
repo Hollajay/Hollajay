@@ -90,6 +90,7 @@ const API_KEY = '50e011a9acc81ee3ed08622ff8255a25'
  function fetcher(){
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${API_KEY}&units=metric`)
 .then(response => {
+   console.log(response);
  return  response.json()})
 .then(data =>{
    currentLocation.innerHTML = `${data.name},${convertCountryCode(data.sys.country)}`
